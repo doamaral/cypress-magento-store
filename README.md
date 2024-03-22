@@ -1,4 +1,4 @@
-![project status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![project status](https://github.com/doamaral/cypress-magento-store/workflows/Run%20E2E%20tests%20for%20Magento%20Store%20Project/badge.svg)
 
 # Project Setup
 - Clone this repo and navigate do the folder
