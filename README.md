@@ -1,3 +1,5 @@
+![project status](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+
 # Project Setup
 - Clone this repo and navigate do the folder
 - Rename the `.env.sample` file to `.env`
