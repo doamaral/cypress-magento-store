@@ -3,6 +3,6 @@ require('dotenv').config();
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: process.env.BASE_URL,
+    baseUrl: process.env.BASE_URL || 'https://magento.softwaretestingboard.com',
   },
 });
