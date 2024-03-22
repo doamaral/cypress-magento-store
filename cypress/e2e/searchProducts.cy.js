@@ -1,6 +1,5 @@
 import searchBarComponent from "../pages/components/searchBarComponent"
 import searchResultPage from "../pages/searchResultPage"
-const { faker } = require('@faker-js/faker');
 
 describe('User wants to Search for a product', () => {
   beforeEach(() => {
@@ -8,7 +7,7 @@ describe('User wants to Search for a product', () => {
   })
 
   const EXISTING_SEARCH_TERM = 'Watch'
-  const NON_EXISTING_SEARCH_TERM = `xyz-${faker.lorem.word()}-zyx`
+  const NON_EXISTING_SEARCH_TERM = `xyzzyx`
 
   it('user search for existing product on the store', () => {
     searchBarComponent.startSearch(EXISTING_SEARCH_TERM)
@@ -26,6 +25,6 @@ describe('User wants to Search for a product', () => {
     searchResultPage.searchTitle.should('contain', NON_EXISTING_SEARCH_TERM.toLowerCase())
     
     searchResultPage.noResultsfoundField.should('be.visible')
-    searchResultPage.noResultsfoundField.should('contain', searchResultPage.noResultsfoundMessage)
+    searchResultPage.noResultsfoundField.should('contain', searchResultPage.expectedNoResultsfoundMessage)
   })
 })
