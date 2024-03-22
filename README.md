@@ -1,16 +1,19 @@
+#Cypress Testing sample project
 ![project status](https://github.com/doamaral/cypress-magento-store/workflows/Run%20E2E%20tests%20for%20Magento%20Store%20Project/badge.svg)
+This project uses Cypress with Cucumber to automate test scenarios for a sample e-commerce online shop. It's also using Page Objects Model Pattern to deal with pages and components throughout the application.
+It's running Github Actions for each update to `master` branch
 
-# Project Setup
-- Clone this repo and navigate do the folder
+## Project Setup
+- Clone this repo and navigate to the folder
 - Rename the `.env.sample` file to `.env`
 - Set expected values for each environment variable in `.env`
 - run `npm install` to install all project dependencies
 
-# Running tests
-## Running headless
+## Running tests
+### Running headless
 - `npm test`
 
-## Running on Cypress GUI
+### Running on Cypress GUI
 - `npm run open`
 
 ## Dev
