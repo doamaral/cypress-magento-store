@@ -20,8 +20,9 @@ class SearchBarComponent {
   }
 
   searchAndSubmit(searchValue) {
-    this.searchInput.type(searchValue);
-    this.searchButton.click({force: true});
+    this.searchInput.click();
+    this.searchInput.type(searchValue, {delay: 50});
+    this.searchInput.type('{enter}');
   }
 
   selectNthResult(n) {
