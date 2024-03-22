@@ -8,7 +8,7 @@ describe('User wants to Search for a product', () => {
   })
 
   const EXISTING_SEARCH_TERM = 'Watch'
-  const NON_EXISTING_SEARCH_TERM = faker.lorem.word()
+  const NON_EXISTING_SEARCH_TERM = `xyz-${faker.lorem.word()}-zyx`
 
   it('user search for existing product on the store', () => {
     searchBarComponent.startSearch(EXISTING_SEARCH_TERM)
