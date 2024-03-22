@@ -1,4 +1,5 @@
-class homePage{
-   
+/* eslint-disable require-jsdoc */
+class HomePage {
+
 }
-export default new homePage();
+export default new HomePage();
