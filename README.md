@@ -1,5 +1,6 @@
-#Cypress Testing sample project
+# Cypress Testing sample project
 ![project status](https://github.com/doamaral/cypress-magento-store/workflows/Run%20E2E%20tests%20for%20Magento%20Store%20Project/badge.svg)
+
 This project uses Cypress with Cucumber to automate test scenarios for a sample e-commerce online shop. It's also using Page Objects Model Pattern to deal with pages and components throughout the application.
 It's running Github Actions for each update to `master` branch
 
