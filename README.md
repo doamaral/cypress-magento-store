@@ -27,3 +27,5 @@ To improve your dev experience consider using:
 - https://docs.cypress.io/guides/overview/why-cypress
 - https://filiphric.com/cucumber-in-cypress-a-step-by-step-guide
 - https://www.youtube.com/watch?v=UMFAreP1grE
+- https://github.com/cypress-io/github-action
+- https://docs.cypress.io/guides/continuous-integration/github-actions
