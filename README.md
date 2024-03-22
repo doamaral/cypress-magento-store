@@ -10,3 +10,14 @@
 
 ## Running on Cypress GUI
 - `npm run open`
+
+## Dev
+To improve your dev experience consider using:
+- VSCode
+- [Cucumber Gherkin VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
+- [ESLint VSCode Plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+## References
+- https://docs.cypress.io/guides/overview/why-cypress
+- https://filiphric.com/cucumber-in-cypress-a-step-by-step-guide
+- https://www.youtube.com/watch?v=UMFAreP1grE
