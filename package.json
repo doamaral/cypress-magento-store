@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "lint": "npx eslint *.js",
+    "lint-fix": "npx eslint --fix *.js"
   },
   "keywords": [],
   "author": "",
