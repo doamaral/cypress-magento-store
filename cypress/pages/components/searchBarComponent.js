@@ -21,7 +21,7 @@ class SearchBarComponent {
 
   searchAndSubmit(searchValue) {
     this.searchInput.type(searchValue);
-    this.searchButton.click();
+    this.searchButton.click({force: true});
   }
 
   selectNthResult(n) {
