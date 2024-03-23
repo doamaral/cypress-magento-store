@@ -1,11 +1,11 @@
 /* eslint-disable require-jsdoc */
 class HomePage {
   get productsSession() {
-    return cy.get('div.block-products-list');
+    return 'div.block-products-list';
   }
 
   get productItems() {
-    return cy.get('ol.widget-product-grid li.product-item');
+    return 'ol.widget-product-grid li.product-item';
   }
 
   get productItemDetailNameLocator() {
@@ -20,31 +20,32 @@ class HomePage {
     return 'div.product-item-details div.swatch-attribute.color';
   }
 
-  getProductByName(expectedProductName) {
-    return this.productItems
+  getProductByName(expectedProductName, click) {
+    cy.get(this.productItems)
         .find(this.productItemDetailNameLocator)
         .contains(expectedProductName)
-        .parents('div.product-item-info');
+        .parents('div.product-item-info').as('product');
+    if (click) cy.get('@product').click();
   }
 
-  selectSize(product, size) {
-    product
+  selectSize(size) {
+    cy.get('@product')
         .find(this.productItemDetailSizesLocator)
         .find(`div[option-label="${size}"]`)
         .click();
   }
 
-  selectColor(product, color) {
-    product
+  selectColor(color) {
+    cy.get('@product')
         .find(this.productItemDetailColorsLocator)
         .find(`div[option-label="${color}"]`)
         .click();
   }
 
   addProductToTheCartFromHomePage(expectedProductName) {
-    const chosenProduct = this.getProductByName(expectedProductName);
-    this.selectSize(chosenProduct, 'XL');
-    // TODO: Select Color and Add to Cart
+    this.getProductByName(expectedProductName, false);
+    this.selectSize('XL');
+    this.selectColor('Blue');
   }
 }
 export default new HomePage();
