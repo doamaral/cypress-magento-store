@@ -21,7 +21,7 @@
     "eslint-config-google": "^0.14.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepsDefinitions": true,
+    "nonGlobalStepsDefinitions": false,
     "stepDefinitions": "cypress/e2e/step_definitions"
   }
 }
