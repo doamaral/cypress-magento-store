@@ -3,11 +3,12 @@ import {When, Then, And} from 'cypress-cucumber-preprocessor/steps';
 import searchBarComponent from '../../../pages/components/searchBarComponent';
 import searchResultPage from '../../../pages/searchResultPage';
 
-const EXISTING_SEARCH_TERM = 'Watch';
-const NON_EXISTING_SEARCH_TERM = `xyzzyx`;
+let EXISTING_SEARCH_TERM;
+let NON_EXISTING_SEARCH_TERM;
 
 Given('I want to search a product', () => {
-  cy.visit('/');
+  EXISTING_SEARCH_TERM = 'Watch';
+  NON_EXISTING_SEARCH_TERM = `xyzzyx`;
 });
 
 When('I enter the search term', () => {
