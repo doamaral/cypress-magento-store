@@ -5,9 +5,11 @@ Feature: Purchase an item
     So I can make use of it
 
     Scenario: Purchase from homepage hot sellers
-        Given I am on the home page
+        Given I scroll to hot sellers products on the home page
         When I select a hot seller product
-        And select size and color
-        And Add to the cart
+        And Add to the cart from homepage
+        #TODO: Then cart item counter is increase
+
 
     Scenario: Purchase from product detail page
+        #TODO: Create purchase scenario from product page detail
