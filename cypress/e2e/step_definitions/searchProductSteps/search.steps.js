@@ -1,5 +1,5 @@
 /* eslint-disable new-cap */
-import {Given, When, Then, And} from 'cypress-cucumber-preprocessor/steps';
+import {When, Then, And} from 'cypress-cucumber-preprocessor/steps';
 import searchBarComponent from '../../../pages/components/searchBarComponent';
 import searchResultPage from '../../../pages/searchResultPage';
 
