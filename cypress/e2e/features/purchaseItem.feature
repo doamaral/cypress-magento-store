@@ -6,10 +6,15 @@ Feature: Purchase an item
 
     Scenario: Purchase from homepage hot sellers
         Given I scroll to hot sellers products on the home page
-        When I select a hot seller product
+        When I see a hot seller product
         And Add to the cart from homepage
         #TODO: Then cart item counter is increase
 
 
     Scenario: Purchase from product detail page
-        #TODO: Create purchase scenario from product page detail
+        
+        Given I scroll to hot sellers products on the home page
+        When I select a hot seller product
+        And I set order detail
+        And Add to cart from product detail page
+        #TODO: Add checkout steps
